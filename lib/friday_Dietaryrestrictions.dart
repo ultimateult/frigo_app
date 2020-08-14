@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class matthew_testCustomSize1 extends StatelessWidget {
-  matthew_testCustomSize1({
+class friday_Dietaryrestrictions extends StatelessWidget {
+  friday_Dietaryrestrictions({
     Key key,
   }) : super(key: key);
   @override

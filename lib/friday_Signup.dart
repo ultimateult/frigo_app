@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-// ignore: camel_case_types
-class mScreenCustomSize2 extends StatelessWidget {
-  mScreenCustomSize2({
+class friday_Signup extends StatelessWidget {
+  friday_Signup({
     Key key,
   }) : super(key: key);
   @override
