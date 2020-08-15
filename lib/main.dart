@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frigo_app/home_screen.dart';
 import 'package:frigo_app/mScreenPage2.dart';
 import 'package:frigo_app/matthew_testCustomSize1.dart';
 
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         // the app on. For desktop platforms, the controls will be smaller and
         // closer together (more dense) than on mobile platforms.
       ),
-      home: home_screen.dart(),
+      home: HomeScreen(),
     );
   }
 }
