@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class friday_Posts extends StatelessWidget {
-  friday_Posts({
+class _Posts extends StatelessWidget {
+  _Posts({
     Key key,
   }) : super(key: key);
   @override
@@ -86,6 +86,19 @@ class friday_Posts extends StatelessWidget {
             child: SvgPicture.string(
               _svg_va90vk,
               allowDrawingOutsideViewBox: true,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(51.0, 148.0),
+            child: Container(
+              width: 284.0,
+              height: 213.0,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/posts_pasta.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
             ),
           ),
         ],

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/blend_mask.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class saturday_Groupchatsscreen extends StatelessWidget {
-  saturday_Groupchatsscreen({
+class _Groupchatsscreen extends StatelessWidget {
+  _Groupchatsscreen({
     Key key,
   }) : super(key: key);
   @override
@@ -200,7 +200,7 @@ class saturday_Groupchatsscreen extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(92.0),
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/gc_1.png'),
                   fit: BoxFit.fill,
                 ),
                 border: Border.all(width: 1.0, color: const Color(0xff707070)),
@@ -222,7 +222,7 @@ class saturday_Groupchatsscreen extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(87.0),
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/gc_2.png'),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -236,7 +236,7 @@ class saturday_Groupchatsscreen extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(92.0),
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/gc3.png'),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -250,7 +250,7 @@ class saturday_Groupchatsscreen extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(112.0),
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/gc4.png'),
                   fit: BoxFit.fill,
                 ),
               ),

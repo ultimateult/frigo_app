@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class saturday_Recipesuggester extends StatelessWidget {
-  saturday_Recipesuggester({
+class _Recipesuggester extends StatelessWidget {
+  _Recipesuggester({
     Key key,
   }) : super(key: key);
   @override
@@ -62,7 +62,8 @@ class saturday_Recipesuggester extends StatelessWidget {
                     child: Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: const AssetImage(''),
+                          image: const AssetImage(
+                              'assets/images/recipe_image1.png'),
                           fit: BoxFit.fill,
                         ),
                       ),
@@ -158,7 +159,8 @@ class saturday_Recipesuggester extends StatelessWidget {
                     child: Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: const AssetImage(''),
+                          image: const AssetImage(
+                              'assets/images/recipe_image2.png'),
                           fit: BoxFit.fill,
                         ),
                       ),

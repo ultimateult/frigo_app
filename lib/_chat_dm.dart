@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 
-class friday_Dms extends StatelessWidget {
-  friday_Dms({
+class _chat_dm extends StatelessWidget {
+  _chat_dm({
     Key key,
   }) : super(key: key);
   @override

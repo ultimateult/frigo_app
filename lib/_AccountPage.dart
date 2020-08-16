@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class friday_AccountPage extends StatelessWidget {
-  friday_AccountPage({
+class _AccountPage extends StatelessWidget {
+  _AccountPage({
     Key key,
   }) : super(key: key);
   @override
