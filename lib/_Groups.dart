@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 
-class friday_Groups extends StatelessWidget {
-  friday_Groups({
+class _Groups extends StatelessWidget {
+  _Groups({
     Key key,
   }) : super(key: key);
   @override

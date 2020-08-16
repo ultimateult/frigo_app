@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class friday_Dietaryrestrictions extends StatelessWidget {
-  friday_Dietaryrestrictions({
+class _Dietaryrestrictions extends StatelessWidget {
+  _Dietaryrestrictions({
     Key key,
   }) : super(key: key);
   @override

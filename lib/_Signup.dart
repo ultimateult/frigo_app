@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:frigo_app/root_screen.dart';
 
-class friday_Signup extends StatelessWidget {
-  friday_Signup({
+class _Signup extends StatelessWidget {
+  _Signup({
     Key key,
   }) : super(key: key);
   @override
