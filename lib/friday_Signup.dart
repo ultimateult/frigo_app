@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:frigo_app/root_screen.dart';
 
 class friday_Signup extends StatelessWidget {
   friday_Signup({
@@ -8,6 +9,10 @@ class friday_Signup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.check),
+        onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => RootScreen())),
+      ),
       backgroundColor: const Color(0xfffff3ea),
       body: Stack(
         children: <Widget>[
@@ -103,19 +108,25 @@ class friday_Signup extends StatelessWidget {
           ),
           Transform.translate(
             offset: Offset(52.0, 557.0),
-            child: Container(
-              width: 273.0,
-              height: 37.0,
-              decoration: BoxDecoration(
-                color: const Color(0xffec7c60),
-                border: Border.all(width: 1.0, color: const Color(0xff707070)),
+            child: GestureDetector(
+              onTap: () {
+                print('Log in');
+              },
+              child: Container(
+                width: 273.0,
+                height: 37.0,
+                decoration: BoxDecoration(
+                  color: const Color(0xffec7c60),
+                  border: Border.all(width: 1.0, color: const Color(0xff707070)),
+                ),
               ),
             ),
           ),
+
           Transform.translate(
-            offset: Offset(129.0, 564.0),
+            offset: Offset(160.0, 564.0),
             child: Text(
-              'Sign in with Google',
+              'Login',
               style: TextStyle(
                 fontFamily: 'Californian FB',
                 fontSize: 21,
@@ -136,9 +147,9 @@ class friday_Signup extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(118.0, 610.0),
+            offset: Offset(160.0, 610.0),
             child: Text(
-              'Sign in with Facebook',
+              'Signup',
               style: TextStyle(
                 fontFamily: 'Californian FB',
                 fontSize: 21,
@@ -147,32 +158,7 @@ class friday_Signup extends StatelessWidget {
               textAlign: TextAlign.left,
             ),
           ),
-          Transform.translate(
-            offset: Offset(73.0, 564.0),
-            child: Text(
-              'G',
-              style: TextStyle(
-                fontFamily: 'Arial',
-                fontSize: 21,
-                color: const Color(0xffffffff),
-                fontWeight: FontWeight.w700,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(73.0, 610.0),
-            child: Text(
-              'F',
-              style: TextStyle(
-                fontFamily: 'Arial',
-                fontSize: 21,
-                color: const Color(0xffffffff),
-                fontWeight: FontWeight.w700,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
+
         ],
       ),
     );
