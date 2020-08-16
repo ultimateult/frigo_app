@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/blend_mask.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:frigo_app/_chat_dm.dart';
 
-class _Groupchatsscreen extends StatelessWidget {
-  _Groupchatsscreen({
+class Groupchatsscreen extends StatelessWidget {
+  Groupchatsscreen({
     Key key,
   }) : super(key: key);
   @override
@@ -23,57 +24,60 @@ class _Groupchatsscreen extends StatelessWidget {
             offset: Offset(27.0, 91.0),
             child: BlendMask(
               blendMode: BlendMode.darken,
-              child: Text.rich(
-                TextSpan(
-                  style: TextStyle(
-                    fontFamily: 'Segoe UI Historic',
-                    fontSize: 20,
-                    color: const Color(0xff000000),
-                    shadows: [
-                      Shadow(
-                        color: const Color(0x29000000),
-                        offset: Offset(0, 3),
-                        blurRadius: 6,
-                      )
+              child: GestureDetector(
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => chat_dm())),
+                child: Text.rich(
+                  TextSpan(
+                    style: TextStyle(
+                      fontFamily: 'Segoe UI Historic',
+                      fontSize: 20,
+                      color: const Color(0xff000000),
+                      shadows: [
+                        Shadow(
+                          color: const Color(0x29000000),
+                          offset: Offset(0, 3),
+                          blurRadius: 6,
+                        )
+                      ],
+                    ),
+                    children: [
+                      TextSpan(
+                        text: 'Vegan Warriors\n+1 408 776 5934',
+                      ),
+                      TextSpan(
+                        text: ' ',
+                        style: TextStyle(
+                          color: const Color(0xff124e26),
+                        ),
+                      ),
+                      TextSpan(
+                        text: 'is',
+                        style: TextStyle(
+                          color: const Color(0xff09ae40),
+                        ),
+                      ),
+                      TextSpan(
+                        text: ' ',
+                        style: TextStyle(
+                          color: const Color(0xff09ae40),
+                        ),
+                      ),
+                      TextSpan(
+                        text: 't',
+                        style: TextStyle(
+                          color: const Color(0xff09ae40),
+                        ),
+                      ),
+                      TextSpan(
+                        text: 'yping...',
+                        style: TextStyle(
+                          color: const Color(0xff09ae40),
+                        ),
+                      ),
                     ],
                   ),
-                  children: [
-                    TextSpan(
-                      text: 'Vegan Warriors\n+1 408 776 5934',
-                    ),
-                    TextSpan(
-                      text: ' ',
-                      style: TextStyle(
-                        color: const Color(0xff124e26),
-                      ),
-                    ),
-                    TextSpan(
-                      text: 'is',
-                      style: TextStyle(
-                        color: const Color(0xff09ae40),
-                      ),
-                    ),
-                    TextSpan(
-                      text: ' ',
-                      style: TextStyle(
-                        color: const Color(0xff09ae40),
-                      ),
-                    ),
-                    TextSpan(
-                      text: 't',
-                      style: TextStyle(
-                        color: const Color(0xff09ae40),
-                      ),
-                    ),
-                    TextSpan(
-                      text: 'yping...',
-                      style: TextStyle(
-                        color: const Color(0xff09ae40),
-                      ),
-                    ),
-                  ],
+                  textAlign: TextAlign.left,
                 ),
-                textAlign: TextAlign.left,
               ),
             ),
           ),

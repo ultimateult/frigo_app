@@ -1,7 +1,9 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:frigo_app/friday_AccountPage.dart';
-import 'package:frigo_app/friday_Posts.dart';
+import 'package:frigo_app/_AccountPage.dart';
+import 'package:frigo_app/_Grocerylist.dart';
+import 'package:frigo_app/_Posts.dart';
+import 'package:frigo_app/_Recipesuggester.dart';
 
 import 'home_screen.dart';
 
@@ -14,9 +16,10 @@ class _RootScreenState extends State<RootScreen> {
 
   int _selectedTab = 0;
   var _pageOptions = [
-    HomeScreen(),
-    friday_Posts(),
-    friday_AccountPage(),
+    Recipesuggester(),
+    GroceryList(),
+    Posts(),
+    AccountPage()
   ];
 
   @override
@@ -27,6 +30,7 @@ class _RootScreenState extends State<RootScreen> {
         backgroundColor: Colors.redAccent,
         items: [
           Icon(Icons.home),
+          Icon(Icons.assignment),
           Icon(Icons.people),
           Icon(Icons.account_circle),
         ],

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 
-class _chat_dm extends StatelessWidget {
-  _chat_dm({
+class chat_dm extends StatelessWidget {
+  chat_dm({
     Key key,
   }) : super(key: key);
   @override
@@ -310,7 +310,7 @@ class _chat_dm extends StatelessWidget {
                     'Send',
                     style: TextStyle(
                       fontFamily: 'Segoe UI',
-                      fontSize: 21,
+                      fontSize: 20,
                       color: const Color(0xff000000),
                     ),
                     textAlign: TextAlign.right,

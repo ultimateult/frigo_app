@@ -1,15 +1,33 @@
+import 'package:barcode_scan/gen/protos/protos.pb.dart';
+import 'package:barcode_scan/platform_wrapper.dart';
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class _Recipesuggester extends StatelessWidget {
-  _Recipesuggester({
-    Key key,
-  }) : super(key: key);
+class Recipesuggester extends StatefulWidget {
+  @override
+  _Recipesuggester createState() => _Recipesuggester();
+}
+
+class _Recipesuggester extends State<Recipesuggester> {
+  String qrCodeResult = "Not Yet Scanned";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xfff8f1ec),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.camera_alt),
+        onPressed: () async {
+
+
+          ScanResult codeScanner = (await BarcodeScanner.scan()) as ScanResult;    //barcode scnner
+          setState(() {
+            qrCodeResult = codeScanner.toString();
+          });
+
+        },
+      ),
       body: Stack(
         children: <Widget>[
           Transform.translate(

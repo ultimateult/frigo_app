@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 
-class _Grocerylist extends StatelessWidget {
-  _Grocerylist({
+class GroceryList extends StatelessWidget {
+  GroceryList({
     Key key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: (){},
+      ),
       backgroundColor: const Color(0xfffff3ea),
       body: Stack(
         children: <Widget>[
